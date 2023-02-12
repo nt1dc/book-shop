@@ -1,9 +1,6 @@
 package com.example.shop.entity
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.ManyToMany
+import javax.persistence.*
 
 @Entity
 data class Account(
@@ -13,5 +10,10 @@ data class Account(
     var login: String,
     var password: String,
     @ManyToMany
-    var books: MutableList<Book>
+    @JoinTable(
+        name = "account_book",
+        joinColumns = [JoinColumn(name = "account_id")],
+        inverseJoinColumns = [JoinColumn(name = "book_id")]
+    )
+    private var books: MutableList<Book>
 )

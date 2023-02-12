@@ -1,9 +1,6 @@
 package com.example.shop.entity
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.ManyToMany
+import javax.persistence.*
 
 @Entity
 data class Book(
@@ -13,5 +10,17 @@ data class Book(
     var name: String,
     var description: String,
     @ManyToMany
-    var accounts: MutableList<Account>
+    @JoinTable(
+        name = "account_book",
+        joinColumns = [JoinColumn(name = "book_id")],
+        inverseJoinColumns = [JoinColumn(name = "account_id")]
+    )
+    var accounts: MutableList<Account>,
+    @ManyToMany
+    @JoinTable(
+        name = "book_tag",
+        joinColumns = [JoinColumn(name = "book_id")],
+        inverseJoinColumns = [JoinColumn(name = "tag_id")]
+    )
+    var tags: MutableSet<Tag>
 )
