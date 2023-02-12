@@ -15,7 +15,7 @@ data class Book(
         joinColumns = [JoinColumn(name = "book_id")],
         inverseJoinColumns = [JoinColumn(name = "account_id")]
     )
-    var accounts: MutableList<Account>,
+    var users: MutableList<User>,
     @ManyToMany
     @JoinTable(
         name = "book_tag",

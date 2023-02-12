@@ -1,7 +1,7 @@
 package com.example.shop.repository
 
-import com.example.shop.entity.Account
+import com.example.shop.entity.User
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface AccountRepository : JpaRepository<Account, Int> {
+interface UserRepository : JpaRepository<User, Int> {
 }

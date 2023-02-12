@@ -17,5 +17,5 @@ data class Role(
         joinColumns = [JoinColumn(name = "role_id")],
         inverseJoinColumns = [JoinColumn(name = "account_id")]
     )
-    var accounts: MutableSet<Account>
+    var users: MutableSet<User>
 )

@@ -3,7 +3,7 @@ package com.example.shop.entity
 import javax.persistence.*
 
 @Entity
-data class Account(
+data class User(
     @Id
     @GeneratedValue
     var id: Int,
