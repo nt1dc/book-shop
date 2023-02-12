@@ -21,4 +21,8 @@ BookServiceIml(
     override fun removeBookById(id: Int) {
         bookRepository.deleteById(id);
     }
+
+    override fun getAllBooks(): MutableList<Book> {
+        return bookRepository.findAll()
+    }
 }

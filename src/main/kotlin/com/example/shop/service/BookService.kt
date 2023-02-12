@@ -5,7 +5,8 @@ import org.springframework.stereotype.Service
 
 @Service
 interface BookService {
-    fun getBookById(id:Int): Book
+    fun getBookById(id: Int): Book
     fun addBook(book: Book)
     fun removeBookById(id: Int)
+    fun getAllBooks(): MutableList<Book>
 }

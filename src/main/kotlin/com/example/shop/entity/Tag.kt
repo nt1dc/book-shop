@@ -7,6 +7,7 @@ data class Tag(
     @Id
     @GeneratedValue
     var id: Int,
+    @Column(unique = true)
     var name: String,
     @ManyToMany
     @JoinTable(

@@ -33,6 +33,10 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-kotlin:1.6.9")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation ("org.springframework.boot:spring-boot-starter-security")
+    implementation ("io.jsonwebtoken:jjwt-api:0.11.5")
+    implementation ("io.jsonwebtoken:jjwt-impl:0.11.5")
+    implementation ("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("org.postgresql:postgresql")
