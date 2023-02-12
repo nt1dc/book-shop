@@ -21,11 +21,11 @@ class BookController(
 
     @PostMapping
     fun addBook(book: Book) {
-        bookService.addBook(book);
+        bookService.addBook(book)
     }
 
     @DeleteMapping("/{id}")
     fun removeBook(@PathVariable id: Int) {
-        bookService.removeBookById(id);
+        bookService.removeBookById(id)
     }
 }

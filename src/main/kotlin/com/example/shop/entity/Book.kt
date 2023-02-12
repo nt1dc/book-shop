@@ -22,5 +22,13 @@ data class Book(
         joinColumns = [JoinColumn(name = "book_id")],
         inverseJoinColumns = [JoinColumn(name = "tag_id")]
     )
-    var tags: MutableSet<Tag>
+    var tags: MutableSet<Tag>,
+    var uploadLink: String,
+    @ManyToMany
+    @JoinTable(
+        name = "book_author",
+        joinColumns = [JoinColumn(name = "book_id")],
+        inverseJoinColumns = [JoinColumn(name = "author_id")]
+    )
+    var authors: MutableSet<Author>
 )
