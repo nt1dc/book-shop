@@ -5,5 +5,4 @@ import org.springframework.stereotype.Service
 
 @Service
 class AccountServiceImpl(accountRepository: AccountRepository) : AccountService {
-
 }
