@@ -1,7 +1,6 @@
 [submodule "eureka-server"]
 	path = eureka-server
 	url = https://github.com/nt1dc/book-shop-eureka-server
-
 [submodule "book-service"]
 	path = book-service
 	url = https://github.com/nt1dc/book-shop-book-service
