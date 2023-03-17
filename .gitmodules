@@ -1,7 +1,16 @@
-[submodule "libfoo"]
-	path = include/foo
-	url = git://foo.com/git/lib.git
+[submodule "eureka-server"]
+	path = eureka-server
+	url = https://github.com/nt1dc/book-shop-eureka-server
 
-[submodule "libbar"]
-	path = include/bar
-	url = git://bar.com/git/lib.git
+[submodule "book-service"]
+	path = book-service
+	url = https://github.com/nt1dc/book-shop-book-service
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/nt1dc/book-shop-api-gateway
+[submodule "delivery-service"]
+	path = delivery-service
+	url = https://github.com/nt1dc/book-shop-delivery-service
+[submodule "payment-service"]
+	path = payment-service
+	url = https://github.com/nt1dc/book-shop-payment-service
