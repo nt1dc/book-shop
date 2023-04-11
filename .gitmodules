@@ -13,3 +13,6 @@
 [submodule "payment-service"]
 	path = payment-service
 	url = https://github.com/nt1dc/book-shop-payment-service
+[submodule "auth-service"]
+	path = auth-service
+	url = https://github.com/nt1dc/book-shop-auth-service
