@@ -16,3 +16,6 @@
 [submodule "auth-service"]
 	path = auth-service
 	url = https://github.com/nt1dc/book-shop-auth-service
+[submodule "notification-server"]
+	path = notification-server
+	url = https://github.com/nt1dc/book-shop-notification-server
